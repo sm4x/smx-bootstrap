@@ -2,5 +2,5 @@
 
 
 
-
+This is Index
 <?php get_footer(); ?>
