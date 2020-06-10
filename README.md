@@ -1,2 +1,3 @@
 # smx-bootstrap
-Wordpress development theme with bootstrap
+
+Wordpress Development Theme with Bootstrap
