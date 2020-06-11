@@ -1,5 +1,6 @@
 <?php get_header(); ?>
   <main>
+    SEARCH.PHP
     <section class="page-wrap">
       <div class="row">
         <div class="col-lg-3">

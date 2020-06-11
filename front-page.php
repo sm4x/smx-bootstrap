@@ -14,6 +14,7 @@
           <?php get_template_part('inc/section','content'); ?>
         </div>
       </div>
+      <?php get_search_form(); ?>
     </section>
   </main>
 <?php get_footer(); ?>
