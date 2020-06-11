@@ -14,13 +14,14 @@
     // TAGS
     /*
     $tags = get_the_tags();
-    foreach($tags as $tag):
-  ?>
-      <a href="<?php get_tag_link($tag->term_id); ?>" class="badge badge-success">
-        <?php echo($tag -> name); ?>
-      </a>
-    <?php endforeach; */
-  ?>
+    if($tags):
+      foreach($tags as $tag):
+      ?>
+        <a href="<?php get_tag_link($tag->term_id); ?>" class="badge badge-success">
+          <?php echo($tag -> name); ?>
+        </a>
+      <?php endforeach; endif;*/
+    ?>
 
   <?php
     // CATEGORIES
