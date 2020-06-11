@@ -1,6 +1,5 @@
 <?php get_header(); ?>
   <main>
-    SEARCH.PHP
     <section class="page-wrap">
       <div class="row">
         <div class="col-lg-3">
@@ -11,7 +10,7 @@
           ?>
         </div>
         <div class="col-lg-9">
-          <h2>Suchergebnisse</h2>
+          <h2>Suchergebnisse für "<?php echo(get_search_query()); ?>"</h2>
           <?php get_template_part('inc/section','archive'); ?>
           <?php previous_posts_link(); ?>
           <?php next_posts_link(); ?>
