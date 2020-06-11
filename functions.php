@@ -63,6 +63,10 @@
 
   function smx_post_type(){
     $args = array(
+      'labels' => array(
+        'name' => 'Products',
+        'singular_name' => 'Product',
+      ),
       'public' => true,
       'has_archive' => true,
       'supports' => array('title', 'editor', 'thumbnail'),
