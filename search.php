@@ -11,7 +11,7 @@
         </div>
         <div class="col-lg-9">
           <h2>Suchergebnisse für "<?php echo(get_search_query()); ?>"</h2>
-          <?php get_template_part('inc/section','archive'); ?>
+          <?php get_template_part('inc/section','searchresults'); ?>
           <?php previous_posts_link(); ?>
           <?php next_posts_link(); ?>
         </div>
