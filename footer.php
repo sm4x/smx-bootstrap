@@ -1,13 +1,8 @@
     <footer>
       <div class="container">
-        <?php
-          wp_nav_menu(
-            [
-              'theme_location' => 'footer-menu',
-              'menu_class' => 'footer-bar',
-            ]
-          );
-        ?>
+        <p>
+          &copy;<?php echo(date("Y"));?> <a href="https://github.com/sm4x/smx-bootstrap" target="_blank">sm4x</a> - powered by <a href="https://wordpress.org" target="_blank">Wordpress</a>.
+        </p>
       </div>
       <?php wp_footer(); ?>
     </footer>
