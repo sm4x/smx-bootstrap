@@ -30,6 +30,14 @@ body {
 	text-align:left;
 }
 
+/*      ---------------------------- Widgets ------------------------ */
+
+.widget {
+  list-style-type: none;
+  margin: 0;
+  padding 0;
+}
+
 /*      ---------------------------- sidebar ------------------------ */
 #sidebar {
 	border:1px solid #bbb;
