@@ -33,20 +33,22 @@
   );
 
   // Sidebars
-  function smx_sidebars{
-    register_sidebar([
+  function smx_sidebars(){
+    register_sidebar(
+      array(
         'name' => 'Page Sidebar',
         'id' => 'page-sidebar',
         'before_title' => '<h4 class="widget-title">',
-        'after_title' => '</h4>',
-      ]
+        'after_title' => '</h4>'
+      )
     );
-    register_sidebar([
+    register_sidebar(
+      array(
         'name' => 'Blog Sidebar',
         'id' => 'blog-sidebar',
         'before_title' => '<h4 class="widget-title">',
-        'after_title' => '</h4>',
-      ]
+        'after_title' => '</h4>'
+      )
     );
   }
   add_action('widgets_init', 'smx_sidebars');
