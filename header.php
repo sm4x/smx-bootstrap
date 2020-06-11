@@ -16,9 +16,10 @@
       <div class="container">
         <?php
           wp_nav_menu(
-            array(
+            [
+              'menu_class' => 'top-bar',
               'theme_location' => 'top-menu'
-            )
+            ]
           );
         ?>
       </div>
