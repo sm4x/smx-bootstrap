@@ -3,6 +3,7 @@
     <section class="page-wrap">
       <div class="row">
         <div class="col-md-9 col-md-push-3">
+          <h1><?php echo(single_cat_title()); ?></h1>
           <?php get_template_part('inc/section','archive'); ?>
           <?php // advanced pagination
             /*

@@ -24,14 +24,14 @@
 
   <?php
     // print categories
-    /*
+
     $categories = get_the_category();
     foreach ($categories as $category):
   ?>
       <a href="<?php echo(get_category_link($category->term_id)); ?>" class="badge badge-success">
         <?php echo($category->name); ?>
       </a>
-    <?php endforeach; */
+    <?php endforeach; 
   ?>
   <?php the_content(); ?>
 <?php endwhile; else: endif; ?>
