@@ -71,39 +71,3 @@ body {
 	padding: 5px;
 
 }
-
-/*      ---------------------------- footer ------------------------ */
-/* #footer {font-size:72%; text-align:center;} */
-
-/*
-header .top-bar li {
-  position: relative;
-}
-
-header .top-bar li a {
-  padding: 0.25rem 1rem;
-  color: #fff;
-}
-
-header .top-bar li:first-child a {
-  padding-left: 0;
-}
-
-header .top-bar li:last-child a {
-  padding-right: 0;
-}
-
-header .top-bar li .sub-menu {
-  display: none;
-  list-style-type: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #fff;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
-}
-
-header .top-bar .menu-item-has-children:hover .sub-menu {
-  display: block;
-}
-*/
