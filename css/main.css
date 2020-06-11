@@ -13,3 +13,7 @@ header .top-bar {
   margin: 0;
   padding: 0;
 }
+
+header .top-bar li a {
+  padding: 0 1rem;
+}
