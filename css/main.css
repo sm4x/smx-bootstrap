@@ -22,6 +22,10 @@ header .container {
   height: 100%;
 }
 
+header .top-bar li {
+  position: relative;
+}
+
 header .top-bar li a {
   padding: 0.25rem 1rem;
   color: #fff;
@@ -37,6 +41,7 @@ header .top-bar li:last-child a {
 
 header .top-bar li .sub-menu {
   display: none;
+  list-style-type: none;
   position: absolute;
   top: 0;
   left: 0;
