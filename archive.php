@@ -2,7 +2,14 @@
   <main>
     <section class="page-wrap">
       <div class="row">
-        <div class="col-md-9 col-md-push-3">
+        <div class="col-lg-3">
+          <?php if( is_active_sidebar('page-sidebar'))
+            {
+              dynamic_sidebar('page-sidebar');
+            }
+          ?>
+        </div>
+        <div class="col-lg-9">
           <h1><?php echo(single_cat_title()); ?></h1>
           <?php get_template_part('inc/section','archive'); ?>
           <?php // advanced pagination
@@ -20,7 +27,6 @@
           <?php previous_posts_link(); ?>
           <?php next_posts_link(); ?>
         </div>
-        <div class="col-md-3 col-md-pull-9" id="sidebar"><?php get_sidebar();?></div>
       </div>
     </section>
   </main>
