@@ -8,7 +8,7 @@
 */
 ?>
 <?php get_header(); ?>
-    <main>
+  <main>
       <?php get_template_part('inc/section','content'); ?>
-    </main>
+  </main>
 <?php get_footer(); ?>

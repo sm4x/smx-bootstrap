@@ -22,6 +22,39 @@ header .container {
   height: 100%;
 }
 
+body {
+	background:white;
+	color:#666666;
+	line-height:22px;
+	font-size:16px;
+	text-align:left;
+}
+
+/*      ---------------------------- sidebar ------------------------ */
+#sidebar {
+	border:1px solid #bbb;
+	padding: 10px;
+	margin:10px 0 10px 0;
+	background: #fff;
+	font-size: 14px;
+}
+
+#sidebar h6 {
+	display: block;
+	-webkit-margin-after: 1.5em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+    font-size:115%;
+	background: url(images/bg_blue.png) repeat-x scroll 0 0;
+	padding: 5px;
+
+}
+
+/*      ---------------------------- footer ------------------------ */
+/* #footer {font-size:72%; text-align:center;} */
+
+/*
 header .top-bar li {
   position: relative;
 }
@@ -52,3 +85,4 @@ header .top-bar li .sub-menu {
 header .top-bar .menu-item-has-children:hover .sub-menu {
   display: block;
 }
+*/
