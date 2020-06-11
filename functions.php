@@ -71,7 +71,7 @@
       'hierarchical' => true,
       'public' => true,
       'has_archive' => true,
-      'supports' => array('title', 'editor', 'thumbnail'),
+      'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
     );
     register_post_type('produkte', $args);
   }
