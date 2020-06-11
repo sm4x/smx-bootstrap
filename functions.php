@@ -19,6 +19,7 @@
 
   // Theme Options
   add_theme_support('menus');
+  add_theme_support('post_thumbnails');
 
   // Menus
   register_nav_menus(

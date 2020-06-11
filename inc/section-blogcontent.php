@@ -41,7 +41,9 @@
 
   <?php
     // Comments
+    /*
     comments_template();
+    */
   ?>
 
 <?php endwhile; else: endif; ?>
