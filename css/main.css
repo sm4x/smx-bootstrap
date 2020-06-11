@@ -37,4 +37,14 @@ header .top-bar li:last-child a {
 
 header .top-bar li .sub-menu {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  background: #fff;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+header .top-bar .menu-item-has-children:hover .sub-menu {
+  display: block;
 }
