@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-9 col-md-push-3">
           <?php get_template_part('inc/section','archive'); ?>
-          <?php
+          <?php // advanced pagination
             global $wp_query;
             $big = 999999999; // unlikely integer
             echo paginate_links( [
@@ -15,6 +15,8 @@
               ]
             )
           ?>
+          <?php previous_posts_link(); ?>
+          <?php next_posts_link(); ?>
         </div>
         <div class="col-md-3 col-md-pull-9" id="sidebar"><?php get_sidebar();?></div>
       </div>
