@@ -9,14 +9,29 @@
     echo (get_the_date('d/m/Y'));
     */
   ?>
-  <?php /*
+
+  <?php
+    // print tags
+    /*
     $tags = get_the_tags();
     foreach($tags as $tag):
   ?>
-    <a href="<?php get_tag_link($tag->term_id); ?>">
-      <?php echo($tag -> name); ?>
-    </a>
-  <?php endforeach; */?>
+      <a href="<?php get_tag_link($tag->term_id); ?>" class="badge badge-success">
+        <?php echo($tag -> name); ?>
+      </a>
+    <?php endforeach; */
+  ?>
 
+  <?php
+    // print categories
+    /*
+    $categories = get_the_category();
+    foreach ($categories as $category):
+  ?>
+      <a href="<?php echo(get_category_link($category->term_id)); ?>" class="badge badge-success">
+        <?php echo($category->name); ?>
+      </a>
+    <?php endforeach; */
+  ?>
   <?php the_content(); ?>
 <?php endwhile; else: endif; ?>
