@@ -86,6 +86,7 @@
         'singular_name' => 'Warengruppe',
       ),
       'public' => true,
+      // TAG or CATEGORY like behavior
       'hierarchical' => true,
     );
     register_taxonomy('Warengruppen', array('produkte'), $args);
