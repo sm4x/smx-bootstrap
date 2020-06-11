@@ -23,10 +23,6 @@
   add_theme_support('widgets');
   add_theme_support('custom-logo');
 
-
-
-
-
   // Menus
   register_nav_menus(
     [
@@ -62,6 +58,18 @@
 
   add_image_size('blog-large', 800, 400, false);
   add_image_size('blog-small', 300, 200, true);
+
+  // Custom Post Types
+
+  function smx_post_type(){
+    $args = array(
+      'public' => true,
+      'has_archive' => true,
+      //'supports' => array('title', 'editor', 'thumbnail'),
+    );
+    register_post_type('products', $args);
+  }
+  add_action('init', 'smx_post_type');
 
 
 ?>
