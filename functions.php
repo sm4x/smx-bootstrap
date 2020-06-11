@@ -19,7 +19,7 @@
 
   // Theme Options
   add_theme_support('menus');
-  add_theme_support('post_thumbnails');
+  add_theme_support('post-thumbnails');
 
   // Menus
   register_nav_menus(
