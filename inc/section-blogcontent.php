@@ -6,7 +6,7 @@
     $fname = get_the_author_meta('first_name');
     $lname = get_the_author_meta('last_name');
     echo ($fname . ' ' . $lname);
-    echo (get_the_date());
+    echo (get_the_date('d/m/Y'));
     */
   ?>
   <?php the_content(); ?>
