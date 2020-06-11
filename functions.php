@@ -65,7 +65,7 @@
     $args = array(
       'public' => true,
       'has_archive' => true,
-      //'supports' => array('title', 'editor', 'thumbnail'),
+      'supports' => array('title', 'editor', 'thumbnail'),
     );
     register_post_type('products', $args);
   }
