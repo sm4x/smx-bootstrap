@@ -63,17 +63,32 @@
 
   function smx_post_type(){
     $args = array(
+      'menu-icon' => 'dashicons-carrot',
       'labels' => array(
-        'name' => 'Products',
-        'singular_name' => 'Product',
+        'name' => 'Produkte',
+        'singular_name' => 'Produkt',
       ),
+      'hierarchical' => true,
       'public' => true,
       'has_archive' => true,
       'supports' => array('title', 'editor', 'thumbnail'),
     );
-    register_post_type('products', $args);
+    register_post_type('produkte', $args);
   }
   add_action('init', 'smx_post_type');
 
+  // Taxonomy
 
+  function smx_taxonomy(){
+    $args = array(
+      'labels' => array(
+        'name' => 'Warengruppen',
+        'singular_name' => 'Warengruppe',
+      ),
+      'public' => true,
+      'hierarchical' => true,
+    );
+    register_taxonomy('Warengruppen', array('produkte'), $args);
+  }
+  add_action('init', 'smx_taxonomy');
 ?>
