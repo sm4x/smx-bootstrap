@@ -20,6 +20,7 @@
   // Theme Options
   add_theme_support('menus');
   add_theme_support('post-thumbnails');
+  add_theme_support('widgets');
 
   // Menus
   register_nav_menus(
@@ -31,10 +32,29 @@
     ]
   );
 
+  // Sidebars
+  function smx_sidebars{
+    register_sidebar([
+        'name' => 'Page Sidebar',
+        'id' => 'page-sidebar',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+      ]
+    )
+    register_sidebar([
+        'name' => 'Blog Sidebar',
+        'id' => 'blog-sidebar',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+      ]
+    )
+  }
+  add_action('widgets_init', 'smx_sidebars');
+
   // Custom Image Sizes
 
   add_image_size('blog-large', 800, 400, false);
   add_image_size('blog-small', 300, 200, true);
 
-  // SIDEBAR
+
 ?>
