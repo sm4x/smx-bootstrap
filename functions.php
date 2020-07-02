@@ -59,7 +59,7 @@
   add_image_size('blog-large', 800, 400, false);
   add_image_size('blog-small', 300, 200, true);
 
-  // Custom Post Types
+  // Register Custom Post Type
 
   function smx_post_type(){
     $args = array(
@@ -69,9 +69,10 @@
         'singular_name' => 'Produkt',
       ),
       'hierarchical' => true,
-      'public' => true,
-      'has_archive' => true,
-      'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+      'public' => true, //
+      'has_archive' => true, // archive like a blog post entry
+      'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'), // Users access to these modules
+      'rewrite' => array('slug' => 'my-products'),
     );
     register_post_type('produkte', $args);
   }
