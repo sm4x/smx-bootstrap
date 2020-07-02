@@ -78,7 +78,7 @@
   }
   add_action('init', 'smx_post_type');
 
-  // Taxonomy
+  // Taxonomy (categories for Custom Post Types)
 
   function smx_taxonomy(){
     $args = array(
@@ -87,10 +87,9 @@
         'singular_name' => 'Warengruppe',
       ),
       'public' => true,
-      // TAG or CATEGORY like behavior
-      'hierarchical' => true,
+      'hierarchical' => true, // true -> acts like CATEGORY, false acts like a tag
     );
-    register_taxonomy('Warengruppen', array('produkte'), $args);
+    register_taxonomy('Warengruppen', array('produkte'), $args); // 2nd arg (array) determines for which Custom Post types this works
   }
   add_action('init', 'smx_taxonomy');
 ?>
