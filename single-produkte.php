@@ -20,6 +20,12 @@ Display Custom Post Type 'Produkte'
             <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>" class="img-fluid mb-3 img-thumbnail">
           <?php endif; ?>
           <?php get_template_part('inc/section','produkte'); ?>
+            <ul>
+              <li>
+                <!-- Display Advanced Custom Fields -->
+                Name: <?php echo the_field('name'); ?>
+              </li>
+            </ul>
           <?php wp_link_pages(); // Link Pages that are separated with nextpage tag?>
         </div>
       </div>
