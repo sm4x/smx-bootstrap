@@ -64,15 +64,15 @@
   function smx_post_type(){
     $args = array(
       'menu-icon' => 'dashicons-carrot',
-      'labels' => array(
-        'name' => 'Produkte',
+      'labels' => array(  // set a custom post type label in admin dashbord
+        'name' => 'Produkte', //
         'singular_name' => 'Produkt',
       ),
-      'hierarchical' => true,
+      'hierarchical' => true, // true acts more like a page as opposed to a post
       'public' => true, //
       'has_archive' => true, // archive like a blog post entry
       'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'), // Users access to these modules
-      'rewrite' => array('slug' => 'my-products'),
+      // 'rewrite' => array('slug' => 'my-products'), // rewrite permalink
     );
     register_post_type('produkte', $args);
   }
