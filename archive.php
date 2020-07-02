@@ -3,9 +3,9 @@
     <section class="page-wrap">
       <div class="row">
         <div class="col-lg-3">
-          <?php if( is_active_sidebar('page-sidebar'))
+          <?php if( is_active_sidebar('blog-sidebar'))
             {
-              dynamic_sidebar('page-sidebar');
+              dynamic_sidebar('blog-sidebar');
             }
           ?>
         </div>
