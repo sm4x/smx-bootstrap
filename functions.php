@@ -63,7 +63,7 @@
 
   function smx_post_type(){
     $args = array(
-      'menu-icon' => 'dashicons-carrot', // WP Dashicon
+      'menu_icon' => 'dashicons-carrot', // WP Dashicon
       'labels' => array(  // set a custom post type label in admin dashbord
         'name' => 'Produkte', //
         'singular_name' => 'Produkt',
